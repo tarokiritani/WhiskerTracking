@@ -7,7 +7,7 @@ How to Install
 1. Make sure that your Fiji version is up to date (Help > update ImageJ).
 These macros also require some plugins which may not be included in old Fiji versions.
 2. [ffmpeg](https://ffmpeg.org/) is requried to import movies. Install it if you have not done so.
-3. Install Whisker_Trackering using [ImageJ updater](http://imagej.net/Updater). Click "Help" > "Update Fiji" > 
+3. Install Whisker_Trackering using [ImageJ updater](http://imagej.net/Updater). Open Fiji, "Help" > "Update" > "Manage update sites" > select "WhsiketTracking" > "Close" > "Apply changes" in "ImageJ Updater".
 4. Restart Fiji.
 5. I recommend you assign short cut keys to plugins in WhiskerTrackering ("Plugins" > "Shortcuts" > "Add Shortcut"). 
 
@@ -17,7 +17,7 @@ How to Use
 (f/1.4), and an 2x expansion lens (EX2C, Edmund Optics). The whisker is illuminated
 using an infrared LED (M850L2-C1, Thorlabs).
 
-![Alt text](https://raw.github.com/tarokiritani/WhiskerTrackering/master/whisker.jpg "Whisker Image")
+![Alt text](https://github.com/tarokiritani/WhiskerTrackering/master/whisker.jpg "Whisker Image")
 
 2. Run A_Make_Background. Select a movie, and epoch where whisker is moving. This macro generates a background image used in the following plugins.
 3. Use B_Track_Whisker. Choose all the movies to process. You are prompted to set the base coordinate for whisker base, radius, and angles. This plugin generates a profile image for each movie. In this image, each column corresponds to a profile on the arc of a frame. The darkest points in each column are connected.
