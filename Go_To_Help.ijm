@@ -1,1 +1,1 @@
-waitForUser("help is available at www.brain-recording.science");
+waitForUser("help is available at https://github.com/tarokiritani/WhiskerTracking/blob/master/README.md");
