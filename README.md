@@ -16,9 +16,7 @@ How to Use
 1. The program expects grayscale, white-background (high pixel value) movies. Good image quality is crucial for correct tracking. I use the Optronis 600x2 camera, Navitar 50mm lens
 (f/1.4), and an 2x expansion lens (EX2C, Edmund Optics). The whisker is illuminated
 using an infrared LED (M850L2-C1, Thorlabs).
-![Alt text]()
-
-[[https://github.com/tarokiritani/WhiskerTrackering/master/whisker.jpg|alt=whiskerimg]]
+![Alt tag](https://github.com/tarokiritani/WhiskerTrackering/master/whisker.jpg)
 2. Run A_Make_Background. Select a movie, and epoch where whisker is moving. This macro generates a background image used in the following plugins.
 3. Use B_Track_Whisker. Choose all the movies to process. You are prompted to set the base coordinate for whisker base, radius, and angles. This plugin generates a profile image for each movie. In this image, each column corresponds to a profile on the arc of a frame. The darkest points in each column are connected.
 4. Open a profile image, and run C_Profile_To_Trace to convert the image data to text file containing an angle array. Remove any incorrectly tracked points by a. making an roi, and b. backspace or edit > clear (create a shortcut!).
